@@ -36,7 +36,6 @@ app.delete('/todos/:id', async (req, res) => {
 
 try {
     await connection.authenticate();
-    await connection.sync({ force: true });
 
     console.log('Connection has been established successfully.');
     app.listen(8080, () => {
