@@ -39,7 +39,7 @@ try {
     await connection.sync({ force: true });
 
     console.log('Connection has been established successfully.');
-    app.listen(3000, () => {
+    app.listen(8080, () => {
         console.log('Server is running on port 3000');
     });
 } catch (error) {
